@@ -1,5 +1,5 @@
 // The root URL for the RESTful services
-var rootURL = "http://magicwebsystems.com/examen/api/empleados";
+var rootURL = "https://miguelx1991.github.io/empleados/api/empleados";
 
 // Retrieve wine list when application starts 
 findAll();
@@ -70,7 +70,7 @@ function MostrarArray()
 {
     $.ajax({
 		type: 'GET',
-		url: 'http://magicwebsystems.com/examen/api/array',
+		url: 'https://miguelx1991.github.io/empleados/api/array',
 		//dataType: "json", // data type of response
 		success: MostrarDatosArray
 	});
@@ -85,7 +85,7 @@ function QuitarCaracter(tcQuiCar)
 {
     $.ajax({
 		type: 'GET',
-		url: 'http://magicwebsystems.com/examen/api/caracter/cadena/' + tcQuiCar,
+		url: 'https://miguelx1991.github.io/empleados/api/caracter/cadena/' + tcQuiCar,
 		//dataType: "json",
 		success: MostrarCadena
 	});
