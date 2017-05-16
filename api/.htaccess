@@ -6,5 +6,9 @@ RewriteEngine On
 #
 #RewriteBase /
 
+RewriteBase /api/
+
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php [QSA,L]
